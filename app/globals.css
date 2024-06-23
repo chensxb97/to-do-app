@@ -115,6 +115,10 @@ textarea.form-input {
   resize: vertical;
 }
 
+.form-submit {
+  text-align: right;
+}
+
 
 button {
   background-color: #000000;

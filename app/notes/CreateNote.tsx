@@ -69,9 +69,11 @@ export default function CreateNote() {
                         </option>
                     ))}
                 </select>
-                <button type="submit">
-                    Create note
-                </button>
+                <div className="form-submit">
+                    <button type="submit">
+                        Create note
+                    </button>
+                </div>
             </form>
         </main>
     )
