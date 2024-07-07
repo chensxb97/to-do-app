@@ -12,7 +12,6 @@ export default function CreateNote() {
 
     const create = async () => {
         // const db = new PocketBase('http://127.0.0.1:8090');
-
         // await db.records.create('notes', {
         //   title,
         //   description,
