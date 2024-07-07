@@ -108,19 +108,19 @@ export default function EditNote({ note }: any) {
                     placeholder="Title"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 />
                 <textarea
                     placeholder="Description"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 />
                 <select
                     placeholder="Urgency"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 >
                     {options.map((option, index) => (
                         <option key={index} value={option}>
