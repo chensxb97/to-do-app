@@ -101,8 +101,8 @@ input,
 
 .form-input {
   display: block;
-  min-width: 900px;
-  max-width: 900px;
+  min-width: 700px;
+  max-width: 700px;
   padding: 10px;
   margin: 10px 0;
   box-sizing: border-box;
@@ -119,9 +119,8 @@ textarea.form-input {
   text-align: right;
 }
 
-
 button {
-  background-color: #000000;
+  background-color: slategray;
   border: none;
   color: white;
   padding: 0.5rem 2rem;
@@ -129,10 +128,38 @@ button {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  margin: 0px 0px 0px 10px;
+  border-radius: 4px
 }
+
+.back {
+  min-width: 700px;
+  max-width: 700px;
+}
+
 
 nav a {
   font-weight: bold;
   margin: 0 2rem;
   text-decoration: none;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.create {
+  background-color: royalblue
+}
+
+.clone {
+  background-color: darkcyan
+}
+
+.delete {
+  background-color: crimson
 }

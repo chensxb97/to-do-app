@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-import Link from 'next/link';
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NextJS To-Do App",
@@ -20,14 +19,6 @@ export default function RootLayout({
       <body>
         <main>
           <h1>My To-Do App</h1>
-          {/* <nav>
-            <Link href="/">
-              Home
-            </Link>
-            <Link href="/notes">
-              
-            </Link>
-          </nav> */}
           {children}
         </main>
       </body>

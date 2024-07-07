@@ -1,12 +1,12 @@
 'use client';
-
+// import PocketBase from 'pocketbase';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function CreateNote() {
-    const [title, setTitle] = useState('');
-    const [description, setDescription] = useState('');
-    const [category, setCategory] = useState('Normal');
+    const [title, setTitle] = useState("")
+    const [description, setDescription] = useState("")
+    const [category, setCategory] = useState("Normal")
 
     const router = useRouter();
 
@@ -18,7 +18,6 @@ export default function CreateNote() {
         //   description,
         //   category
         // });
-
         await fetch('http://127.0.0.1:8090/api/collections/notes/records', {
             method: 'POST',
             headers: {
@@ -30,11 +29,9 @@ export default function CreateNote() {
                 category
             }),
         });
-
         setCategory('Normal');
         setDescription('');
         setTitle('');
-
         router.refresh();
     }
 
@@ -49,19 +46,19 @@ export default function CreateNote() {
                     placeholder="Title"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 />
                 <textarea
                     placeholder="Description"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 />
                 <select
                     placeholder="Urgency"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="form-input"  // Apply the CSS class
+                    className="form-input"
                 >
                     {options.map((option, index) => (
                         <option key={index} value={option}>
@@ -70,8 +67,8 @@ export default function CreateNote() {
                     ))}
                 </select>
                 <div className="form-submit">
-                    <button type="submit">
-                        Create note
+                    <button className="create" type="submit">
+                        Create
                     </button>
                 </div>
             </form>

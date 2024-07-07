@@ -1,0 +1,21 @@
+.note {
+    height: auto;
+    width: 300px;
+    padding: 0.2rem 1rem;
+    margin: 0.5rem;
+    background: #00fbff;
+    box-shadow: 4px 4px 8px 1px #00000075;
+    border-radius: 4px
+}
+
+.urgent {
+    background: lightcoral;
+}
+
+.normal {
+    background: lightskyblue;
+}
+
+.backlog {
+    background: lightgreen;
+}
