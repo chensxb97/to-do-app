@@ -12,12 +12,10 @@ async function getNotes() {
 export default async function Notes({ params }: any) {
     const notes = await getNotes();
     return (
-        <div>
-            <div className="grid">
-                {notes?.map((note) => {
-                    return <Note key={note.id} note={note} />;
-                })}
-            </div>
+        <div className="grid">
+            {notes?.map((note) => {
+                return <Note key={note.id} note={note} />;
+            })}
         </div>
     );
 }

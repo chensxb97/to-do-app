@@ -21,15 +21,13 @@ export function Note({ note }: any) {
     const { id, title, description, category, created } = note || {};
     const categoryClass = category ? styles[`${category.toLowerCase()}`] : '';
     return (
-        <div>
-            <Link href={`/note/${id}`}>
-                <div className={`${styles.note} ${categoryClass}`}>
-                    <h2>{title}</h2>
-                    <h5>{description}</h5>
-                    <p>{formatDate(created) ?? created}</p>
-                </div>
-            </Link >
-        </div >
+        <Link href={`/note/${id}`}>
+            <div className={`${styles.note} ${categoryClass}`}>
+                <h2>{title}</h2>
+                <h5>{description}</h5>
+                <p>{formatDate(created) ?? created}</p>
+            </div>
+        </Link >
     );
 }
 
